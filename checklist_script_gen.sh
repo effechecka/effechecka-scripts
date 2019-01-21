@@ -5,6 +5,7 @@
 # for examples, see https://github.com/diatomsRcool/checklists and https://github.com/diatomsRcool/water_body_checklists and associated jenkins jobs at http://archive.guoda.bio/view/Effechecka%20Jobs/
 
 generate_status_script() {
+  echo "#!/bin/bash" > checklist_status.sh
   if [ -f checklist_status.tsv ]
   then
     # only check geonames_id without prior 200 status code
