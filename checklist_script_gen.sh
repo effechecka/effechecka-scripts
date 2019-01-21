@@ -6,7 +6,7 @@
 
 generate_status_script() {
   echo "#!/bin/bash" > checklist_status.sh
-  if [ -f checklist_status.tsv ]
+  if [ -f checklist_status2.tsv ]
   then
     # only check geonames_id without prior 200 status code
     cat checklist_status.tsv > checklist_status_previous.tsv
